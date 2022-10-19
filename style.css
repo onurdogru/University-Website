@@ -1,0 +1,371 @@
+/* SAYFADAKİ TÜM HERŞEYE ETKİ ETMESİ İÇİN YAZDIĞIMIZ KOD SATIRI
+*/
+
+* {
+    box-sizing: border-box; /* Genişliğimiz ve yüksekliğimizin değişmesini engeller.*/
+}
+
+body {
+    margin: 0; /* Banner kısmında sol ve üstten yapışsın*/
+    padding: 0;
+    background-color: rgb(247, 248, 240);
+    font-family: 'Oxygen', sans-serif; /* Google fontlardan alıntı yaptığımız font'u CSS'de çalıştırmamız gerekmektedir. */
+
+}
+
+#social{ /* En yukarıdaki bar ile ilgili komutlar*/
+    background-color: rgb(243, 228, 25);
+    color: rgb(115, 0, 160);
+    height: 55px;
+    width: 100%;
+    position: sticky; /* En yukarıdaki bar'ın, sayfayı gezerken yukarıda sabit kalması için uygulanan komut satırı. */
+    top:0; /*Bar'ın nereye yapıştırmak istiyorsak, o konuma sabitleriz. */
+    z-index: 1; /* Herhangi bir verinin, bar'ın üzerine gelmemesi için kullanırız*/
+    font-size: 20px;
+    text-align: right;
+    padding: 15px;
+    letter-spacing: 10px;
+
+}
+
+font {
+
+    float: left; /* Yazıyı solda yatırdık */
+    letter-spacing: 2px; /* Harflar arası boşluk açtık */
+}
+
+span {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: ui-rounded;
+    color: rgb(95, 52, 0);
+
+}
+
+#social>i:hover { /* Sosyal medya ikonları*/
+    opacity: 0.8;
+    color: crimson;
+    
+}
+
+#container { /* container dediğimiz alan, sitenin ana alanı/orta alan*/
+    width: 80%;
+    margin: auto;
+    height:auto;
+    
+}
+
+header {
+    width: 100%; /* %80'in %100'ünü kaplat.*/
+    height: 250px;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28,.15); /*banner kısmına köşelere gölge veririz*/
+    border-bottom-left-radius: 10px; /*sağ/sol ovalleriz*/
+    border-bottom-right-radius: 10px;
+    position: relative;
+    color: blue;
+    margin-bottom: 15px;
+}
+
+#headerResim {
+    width: 100%;
+    height: 250px;
+    border-bottom-left-radius: 10px; /*sağ/sol ovalleriz*/
+    border-bottom-right-radius: 10px;
+}
+
+#centered { /*Banner üzerindeki yazıyı ortalamam için kullanılan etiketler aşağıdadır.*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+section {
+    width: 100%;
+    height: auto;
+    background-color: rgb(245, 244, 194);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+    margin-top: 15px;
+    overflow: auto;  /* overflow özelliği, nav'ı section'ın içine sıkıştırır.*/
+
+
+}
+
+footer {
+    background-color: chartreuse;
+}
+
+nav {
+    width: 20%;
+    float: left;
+    margin-top: 10px;
+    height: auto;
+
+}
+
+nav ul {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav li {
+    list-style-type: none;
+
+}
+
+nav li a{
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none; /*linkdeki altında bulunan çizgiyi(MAVİ) kaldırır. ###ÖNEMLİ BİLGİ###  */
+    color:coral;
+    border-bottom: 1px solid #473030;
+    padding-left: 20px;
+    display: block;
+
+}
+
+nav li a:hover{
+    color: rgb(22, 74, 75);
+    background-color: gold;
+
+}
+
+
+i {
+    margin-right: 10px; /* Iconlar ile yazılar arasındaki boşluk*/
+}
+
+main {
+    float: left; /*yan menünün soluna gelmesini istiyoruz*/
+    height: auto;
+    width: 80%;
+    padding: 10px;
+
+}
+
+.icerik {
+    width: 48%;
+    height: auto;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+    margin-bottom: 15px; /*ANA SAYFA FOTOĞRAFLAR ARASINDA VERİLEN BOŞLUK ######ÖNEMLİ NOKTA###### */
+    background-color: rgb(243, 241, 137);
+    
+
+
+}
+
+.rsm {
+    width: 100%;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    transition: opacity 0.8s;  /*OPACİTY'E GEÇİŞ SÜRESİ ###ÖNEMLİ NOKTA#### */
+
+}
+
+.rsm:hover {
+    opacity: 0.6; /*  ##FOTOĞRAFLARA HAFİF BLUR KOMUTU##*/
+}
+
+
+h4{
+    margin: 10px;
+    color: rgb(139, 34, 134);
+
+}
+
+.icerikText {
+    margin: 10px;
+    color: rgb(56, 16, 94);
+
+}
+
+.btnDevam:link {
+    display: block;
+    width: 150px;
+    height: 45px;
+    padding: 10px 20px;
+    background-color: rgb(115, 115, 201);
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 15px;
+    border-radius: 10px;
+   
+
+   
+
+
+}
+
+.btnDevam:hover {
+    opacity: 0.9;
+    background-color: rgb(241, 129, 0);
+    color: black;
+}
+
+
+footer {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(243, 228, 25);
+    color: rgb(115, 0, 160);
+    /*AŞAĞIDAKİ KOD SATIRLARI İLE, FOOTER'DA OLAN YAZILARI KOMPLE SÜTUNA ORTALAMIŞ OLURUZ*/
+    line-height: 75px;
+    text-align: center;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+
+
+}
+
+
+
+
+
+
+/*OTOMASYON PANEL BASLANGIC*/
+
+#panel {
+    background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+    text-align: center;
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    background-color: #d8ea35;
+    
+  }
+  
+  .btn-google {
+    color: white !important;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white !important;
+    background-color: #3b5998;
+  }
+
+.d-grid:hover {
+    opacity: 0.7;
+    
+}
+
+
+
+/*OTOMASYON PANEL BİTİŞ*/
+
+h1 {
+    text-align: center;
+    background-color: #dbc81d;
+    color: #1d2003;
+    line-height: 50px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+
+}
+
+#hakkimizdaRSM {
+    width: 350px;
+    height: 300px;
+    float: left; /*Akışı soldan vermemiz gerekli, yani daha sonradan gelicek içerikleri yanına almış oluruz*/
+    border-radius: 10px;
+    margin:10px;
+
+
+}
+
+/*BÖLÜMLER KISMININ CSS KISMI*/
+
+.referans {
+    width: 31%;
+    height: 300px;
+    background-color: rgb(243, 241, 137);
+    float: left;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+
+}
+
+.refResim {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0px;
+    transition: opacity 0.8s;
+    
+
+}
+.refResim:hover{
+    opacity: 0.6;
+    
+}
+
+.refBaslik {
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    color: #1d2003;
+    text-align: center;
+    height: 45px;
+    line-height: 90px; /* Kimya mühendisliği yazısı, kartın içine direk ortalamak için line-height kullanırız */
+    width: 100%;
+    margin-top: 5px;
+
+
+}
+
+
+iframe {
+    width: 98%;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+    margin-left: 13px;
+    transition: opacity 0.8s;
+
+
+}
+iframe:hover {
+    opacity: 0.6;
+}
+
+.form5 {
+    margin-top: 10px;
+    margin-left: 600px;
+
+}
+
+.adres5 {
+    margin-top: 10px;
+    margin-left: 350px;
+}
+
+.tel5 {
+    margin-top: 10px;
+    margin-left: 530px;
+}
+
+.mail5 {
+    margin-top: 10px;
+    margin-left: 528px;
+}
+
+.section1 {
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}

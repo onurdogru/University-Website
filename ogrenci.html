@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Otomasyonu</title>
+    <!--2.ADIM : CSS dosyasını HTML dosyasına bağlamamız gereklidir. link + tab bastığımız zaman işlem tamamlanır.-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Aşağıdaki linki Google Fontlar sayfasından alıntılarız-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Oxygen&display=swap" rel="stylesheet">
+
+    <!--Aşağıdaki linki fontawesome sitesinden işleriz-->
+    <script src="https://kit.fontawesome.com/a8054fbb98.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <!-- Div kısmı Banner başlangıcı-->
+    <!--div#social enter'a bastığımız zaman, aşağıdaki hazır div yapısı önümüze gelir-->
+    <div id="social">
+
+        <font><strong>BEYLİKDÜZÜ ÜNİVERSİTESİ </strong>| <span> <strong>Dünyanın Ucuna Yolculuk...</strong></span></font> <!--span dememizin nedeni etiket içinde etiket yaratmak. Yani eğer iç kısımda bir değişikliğe gitmek istersen spanlarız.-->
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+
+    </div> <!--Sitenin en üst kısmı-->
+    <!--Div kısmı Banner Bitişi-->
+   
+
+    <!--1.KISIM BAŞLANGIÇ-->
+
+    <div id="container">
+
+
+        <header>
+            <img id="headerResim" src="img/ban1.jpg" alt="">
+            <div id="centered"></div>
+
+            </header>
+
+
+        <section>
+            <nav> <!--SOL MENU KISMI-->
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house-user"></i> Ana Sayfa</a></li> <!--Icon'u fontawesome sitesinden alıyoruz. Direk Anasayfa yazısının önüne kalıp olarak yapıştırırız.-->
+                    <li><a href="ogrenci.html"> <i class="fa-solid fa-graduation-cap"></i> Öğrenci Otomasyonu</a></li>
+                    <li><a href="hakkimizda.html"><i class="fa-solid fa-computer"></i> Hakkımızda</a></li>
+                    <li><a href="bolumler.html"><i class="fa-sharp fa-solid fa-building-user"></i> Bölümler</a></li>
+                    <li><a href="iletisim.html"><i class="fa-sharp fa-solid fa-house-signal"></i> İletişim</a></li>
+
+                </ul>
+
+
+            </nav>
+
+            <main>
+
+
+
+                <div class="panel">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                          <div class="card border-0 shadow rounded-3 my-5">
+                            <div class="card-body p-4 p-sm-5">
+                              <h1 class="card-title text-center mb-5 fw-light fs-5">Beylikdüzü Üniversitesi - Öğrenci Otomasyon Sistemi</h1>
+                              <br>
+                              <form>
+                                <div class="form-floating mb-3">
+                                  <input type="email" class="form-control" id="floatingInput" placeholder="Okul-Numarası">
+                                  <label for="floatingInput"><strong>Mail Adresi/Okul Numarası/TC Kimlik Giriniz</strong></label>
+                                </div>
+                                
+                                <div class="form-floating mb-3">
+                                  <input type="password" class="form-control" id="floatingPassword" placeholder="Şifre">
+                                  <label for="floatingPassword"><strong>Şifre Giriniz</strong></label>
+                                </div>
+                                <br>
+                  
+                                <div class="form-check mb-3">
+                                  <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                                  <label class="form-check-label" for="rememberPasswordCheck">
+                                    Şifremi Hatırla
+                                    
+                                  </label>
+                                  
+                                </div>
+                                <br>
+                                <div class="d-grid">
+                                  <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit"><strong>Giriş Yap</strong></button>
+                                </div>
+                                <hr class="my-4">
+                                <div class="d-grid mb-2">
+                                  <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
+                                    <i class="fab fa-google me-2"></i> Google ile Giriş Yapınız
+                                  </button>
+                                </div>
+                                <div class="d-grid">
+                                  <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="submit">
+                                    <i class="fab fa-facebook-f me-2"></i> Facebook ile Giriş Yapınız
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+
+
+
+
+
+
+            </main>
+
+        </section>
+
+        <footer>Tüm Hakları Saklıdır &copy; | 2022</footer> <!--Sitenin en alt kısmı-->
+
+    </div>
+    <!--1.KISIM BİTİŞ-->
+    
+</body>
+</html>
